@@ -1,0 +1,24 @@
+<html lang="en">
+  <%- include("./partials/header.ejs") %>
+
+  <body>
+    <%- include("./partials/navbar.ejs") %>
+
+    <h2>View Tables</h2>
+    <p>The following tables are available for viewing for the current user <b><%= usrname %></b></p>
+
+    <ul>
+      <li><a href="/view/products">Products List</a></li>
+      <li><a href="/view/clients">Clients List</a></li>
+      <li><a href="/view/purchaseRecs">Purchase Records</a></li>
+      <li><a href="/view/salesRecs">Sales Records</a></li>
+      <li><a href="/view/purchasebills">Purchase Bills</a></li>
+      <li><a href="/view/salesbills">Sales Bills</a></li>
+      <% if(privilege === "Admin") {%>
+        <li><a href="/view/employees">Employees List</a></li>
+        <li><a href="/view/employeesBank">Employees Bank List</a></li>
+        <li><a href="/view/dbusers">DB Users List</a></li>
+      <% } %>
+    </ul>
+  </body>
+</html>

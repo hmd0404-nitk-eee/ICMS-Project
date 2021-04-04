@@ -1,0 +1,16 @@
+<html lang="en">
+  <%- include("./partials/header.ejs") %>
+
+  <body>
+    <%- include("./partials/navbar.ejs") %>
+
+    <h2>Remove Employee Using UEID</h2>
+    <form action="/removeRecs/removeEmp" method="post">
+        <div class="form-container">
+            <label for="ueid" class="form-label">Unique Employee ID:</label>
+            <input type="text" id="ueid" name="ueid" required class="form-inp"/><br/>
+        </div>
+        <button class="form-button">Remove Employee</button>
+    </form>
+  </body>
+</html>
