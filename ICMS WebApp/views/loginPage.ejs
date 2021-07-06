@@ -1,0 +1,21 @@
+<html lang="en">
+  <%- include("./partials/header.ejs") %>
+
+  <body>
+    <%- include("./partials/navbar.ejs") %>
+
+    <h2>Login to ICMS</h2>
+    <p>Login to gain access to various features and tools provided by <b>ICMS</b></p><br/>
+    <form action="/login" method="post">
+        <div class="form-container">
+            <label for="usrname" class="form-label">Username:</label>
+            <input type="text" id="usrname" name="usrname" required class="form-inp"/><br/>
+        </div>
+        <div class="form-container">
+            <label for="pswd" class="form-label">Password:&nbsp;</label>
+            <input type="text" id="pswd" name="pswd" required class="form-inp"/><br/>
+        </div>
+        <button class="form-button">Login</button>
+    </form>
+  </body>
+</html>

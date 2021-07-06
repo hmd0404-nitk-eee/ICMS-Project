@@ -1,0 +1,56 @@
+<html lang="en">
+  <%- include("./partials/header.ejs") %>
+
+  <body>
+    <%- include("./partials/navbar.ejs") %>
+
+    <div>
+      <h2>Add a New Employee</h2>
+      <form action="/addRecs/addEmp" method="POST">
+        <div class="form-container">
+          <label for="ueid" class="form-label">Unique Employee ID:</label>
+          <input type="text" id="ueid" name="ueid" required class="form-inp"/><br/>
+        </div>
+        <div class="form-container">
+          <label for="fname" class="form-label">Employee First Name:</label>
+          <input type="text" id="fname" name="fname" required class="form-inp"/><br/>
+        </div>
+        <div class="form-container">
+          <label for="fname" class="form-label">Employee Middle Name:</label>
+          <input type="text" id="mname" name="mname" required class="form-inp"/><br/>
+        </div>
+        <div class="form-container">
+          <label for="lname" class="form-label">Employee Last Name:</label>
+          <input type="text" id="lname" name="lname" required class="form-inp"/><br/>
+        </div>
+        <div class="form-container">
+          <label for="post" class="form-label">Employee Post:</label>
+          <input type="text" id="post" name="post" required class="form-inp"/><br/>
+        </div>
+        <div class="form-container">
+          <label for="aan" class="form-label">Employee Aadhar Number:</label>
+          <input type="text" id="aan" name="aan" required class="form-inp"/><br/>
+        </div>
+        <div class="form-container">
+          <label for="pan" class="form-label">Employee PAN:</label>
+          <input type="text" id="pan" name="pan" required class="form-inp"/><br/>
+        </div>
+        <div class="form-container">
+          <label for="bName" class="form-label">Employee Bank Name:</label>
+          <input type="text" id="bName" name="bName" required class="form-inp"/><br/>
+        </div>
+        <div class="form-container">
+          <label for="bAccNum" class="form-label">Bank Account Number:</label>
+          <input type="text" id="bAccNum" name="bAccNum" required class="form-inp"/><br/>
+        </div>
+        <div class="form-container">
+          <label for="bIfsc" class="form-label">Bank IFSC:</label>
+          <input type="text" id="bIfsc" name="bIfsc" required class="form-inp"/><br/>
+        </div>
+        <button class="form-button">Submit</button>
+      </form>
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>

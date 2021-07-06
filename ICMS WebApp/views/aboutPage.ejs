@@ -1,0 +1,40 @@
+<html lang="en">
+  <%- include("./partials/header.ejs") %>
+  <body>
+    <%- include("./partials/navbar.ejs") %>
+
+    <div>
+      <h2>ICMS About Page</h2>
+      <p>ICMS SQL DB Compiled Info Page,<br/>
+        Created by Harshal Dhake, 191EE212, National Institute Of Technology, Karantaka.<br/><br/>
+        
+        #1. Stored Procedures: <br/><br/>
+        
+          1. Verify_User(username, password) <br/>
+          2. Add_DB_User(username, password, ueid, privilege) <br/>
+          3. Remove_DB_User(username) <br/>
+          4. Add_Employee(ueid, fname, mname, lname, post, aan, pan, bname, bAccNum, bIfsc) <br/>
+          5. Remove_Employee(ueid) <br/>
+          6. Add_Prd(pidn, pname, pdescrip, cidn) <br/>
+          7. Remove_Prd(pidn) <br/>
+          8. Add_Company_Client(cidn, cname, cremark, cgstin, cbName, cbAccNum, cbIfsc <br/>
+          9. Remove_Company_Client(cidn) <br/>
+          10. Add_Pur_Rec(precid, pidn, cidn, purPrice, dop, quantity, manfacturing date) <br/>
+          11. Remove_Pur_Rec(precid) <br/>
+          12. Add_Sale_Rec(srecid, pidn, cidn, salePrice, dos, quantity) <br/>
+          13. Remove_Sale_Rec(srecid) <br/>
+          14. GetAllProducts() <br/>
+          15. GetAllCompanyClients() <br/>
+          16. GetAllPurchaseBills() <br/>
+          17. GetAllSalesBills() <br/><br/>
+
+        #2. Triggers:<br/><br/>
+          1. Add_Pur_Bills<br/>
+          2. Add_Sales_Bills<br/>
+
+        </p>
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>

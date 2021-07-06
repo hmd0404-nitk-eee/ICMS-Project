@@ -1,0 +1,28 @@
+<html lang="en">
+  <%- include("./partials/header.ejs") %>
+  <body>
+    <%- include("./partials/navbar.ejs") %>
+
+    <div>
+      <h2>Viewing Employees Table</h2>
+      <p>The table displayed below contains the basic information of Employees in the Company.</p>
+    </div>
+
+    <div>
+        <% if(employees.length > 0) { %>
+            <% employees.forEach(employee => {%>
+
+                <h4><%= employee.ueid %>. <%= employee.fname + " " + employee.mname + " " + employee.lname %></h4>
+                <p><%= employee.post %> at HmD Industrial Solutions Pvt. Ltd.</p>
+                <p>Aadhar: <%= employee.aan %></p>
+                <p>PAN: <%= employee.pan %></p>
+            
+            <% }) %>
+        <% } else { %>
+          <p>There are no employees added to the Master Records.</p>
+        <% } %>
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>

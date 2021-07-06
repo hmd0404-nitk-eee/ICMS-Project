@@ -1,0 +1,29 @@
+<html lang="en">
+  <%- include("./partials/header.ejs") %>
+
+  <body>
+    <%- include("./partials/navbar.ejs") %>
+
+    <h2>Sign Up for ICMS</h2>
+    <p>Sign up to gain access to various features and tools provided by ICMS</b></p>
+    <form action="/signup" method="post" align="center">
+        <div class="form-container">
+            <label for="usrname" class="form-label">Username:</label>
+            <input type="text" id="usrname" name="usrname" required class="form-inp"/><br/>
+        </div>
+        <div class="form-container">
+            <label for="pswd" class="form-label">Password:</label>
+            <input type="text" id="pswd" name="pswd" required class="form-inp"/><br/>
+        </div>
+        <div class="form-container">
+            <label for="ueid" class="form-label">UEID:</label>
+            <input type="text" id="ueid" name="ueid" required class="form-inp"/><br/>
+        </div>
+        <div class="form-container">
+            <label for="privilege" class="form-label">Privilege (Access Rights):</label>
+            <input type="text" id="privilege" name="privilege" required class="form-inp"/><br/>
+        </div>
+        <button class="form-button">Sign Up</button>
+    </form>
+  </body>
+</html>

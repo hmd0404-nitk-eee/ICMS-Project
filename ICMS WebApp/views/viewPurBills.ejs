@@ -1,0 +1,24 @@
+<html lang="en">
+  <%- include("./partials/header.ejs") %>
+  <body>
+    <%- include("./partials/navbar.ejs") %>
+
+    <div>
+      <h2>Viewing Clients Table</h2>
+      <p>The table displayed below contains the basic information of Clients of the Company.</p>
+    </div>
+
+    <div>
+        <% if(clients.length > 0) { %>
+            <% clients.forEach(client => {%>
+                <h4><%= client %></h4>
+            
+            <% }) %>
+        <% } else { %>
+          <p>There are no employees added to the Master Records.</p>
+        <% } %>
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>
